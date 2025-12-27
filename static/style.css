@@ -1,0 +1,102 @@
+/* For the body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+    padding: 40px;
+}
+
+/* For the headings (titles) */
+h1 {
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 26px;
+}
+
+h2 {
+    margin-top: 24px;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* For the form */
+form {
+    max-width: 520px;
+    margin: auto;
+    padding: 24px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+/* For the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 16px;
+}
+
+/*For the table heading*/
+th {
+    background: #f0f0f0;
+    font-weight: bold;
+    padding: 8px;
+}
+
+/*For the table data*/
+td {
+    padding: 6px;
+}
+
+input[type="number"] {
+    width: 93%;
+    padding: 6px 8px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* For options and input */
+select,
+#value {
+    width: 100%;
+    margin-top: 10px;
+    padding: 6px 4px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+input {
+    width: 75%;
+    box-sizing: border-box;
+    padding: 8px;
+    margin: 5px 0;
+}
+
+/* For the buttons */
+button {
+    padding: 8px 12px;
+    border: 1px solid #888;
+    background: #f5f5f5;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #eaeaea;
+}
+
+button[type="submit"] {
+    width: 100%;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+/* For the output */
+#output {
+    margin-top: 16px;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}

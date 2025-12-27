@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Value Predictor</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <h1>Value Predictor (Regression)</h1>
+
+    <form id="form">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>X</th>
+                    <th>Y</th>
+                </tr>
+            </thead>
+            <tbody id="rows">
+                <tr>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button type="button" onclick="addRow()">Add Row</button>
+
+        <br><br>
+
+        <select id="mode">
+            <option value="x">Predict X</option>
+            <option value="y">Predict Y</option>
+            <option value="r">Find correlation coefficient (r)</option>
+        </select>
+
+        <input type="number" id="value" placeholder="Enter known value of other list (not needed for r)"style="width:flex">
+
+        <br><br>
+        <button type="submit">Predict</button>
+    </form>
+
+    <h2 id="output"></h2>
+
+    <script src="/static/script.js"></script>
+</body>
+
+</html>
