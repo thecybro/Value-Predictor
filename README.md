@@ -33,9 +33,6 @@ Value Predictor
 │   └── style.css
 ├── templates
 │   └── index.html
-└── __pycache__
-    ├── formulae.cpython-314.pyc
-    └── predictor.cpython-314.pyc
 ```
 
 ## How to Run
