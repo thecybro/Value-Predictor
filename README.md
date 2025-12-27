@@ -20,8 +20,27 @@ to:
 - Correlation:
   - r = ±√(bxy · byx)
 
+## Structure:
+
+```
+Value Predictor
+├── app.py
+├── formulae.py
+├── predictor.py
+├── README.md
+├── static
+│   ├── script.js
+│   └── style.css
+├── templates
+│   └── index.html
+└── __pycache__
+    ├── formulae.cpython-314.pyc
+    └── predictor.cpython-314.pyc
+```
+
 ## How to Run
 
 ```bash
 pip install flask
 python app.py
+```
