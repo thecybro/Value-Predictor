@@ -1,0 +1,156 @@
+/* To reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* For variables */
+:root {
+    --bg-gradient: linear-gradient(135deg, #0b0f1a, #111827, #020617);
+    --card-bg: #0f172a;
+    --card-border: #1e293b;
+
+    --accent: #38bdf8;
+    --accent-soft: rgba(56, 189, 248, 0.12);
+
+    --text-main: #e5e7eb;
+    --text-muted: #9ca3af;
+
+    --border-light: #1f2937;
+    --shadow-soft: 0 15px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* For the page */
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: "Inter", Arial, sans-serif;
+    background: var(--bg-gradient);
+    color: var(--text-main);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* To style the form (which contains all the data) */
+form {
+    width: 100%;
+    max-width: 560px;
+    min-height: 540px;
+
+    display: flex;
+    flex-direction: column;
+
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    box-shadow: var(--shadow-soft);
+
+    padding: 28px;
+}
+
+/* To style and align the title at center */
+h1 {
+    margin: 0 0 20px 0;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #f8fafc;
+}
+
+/* Main part */
+.form-content {
+    flex: 1;
+}
+
+/* For the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 16px;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background: var(--accent-soft);
+    color: #7dd3fc;
+    font-weight: 600;
+    border-bottom: 1px solid var(--border-light);
+}
+
+td {
+    border-bottom: 1px solid var(--border-light);
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+/*For inputs and selections */
+input,
+select {
+    width: 100%;
+    padding: 11px 12px;
+    margin-top: 12px;
+
+    border-radius: 8px;
+    border: 1px solid var(--border-light);
+
+    background: #020617;
+    color: var(--text-main);
+    font-size: 14px;
+}
+
+input::placeholder {
+    color: var(--text-muted);
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.25);
+}
+
+/* To style 'em buttons */
+button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 14px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+    color: #020617;
+
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button:hover {
+    filter: brightness(1.1);
+}
+
+/* To put output at the bottom center */
+#output {
+    margin-top: 18px;
+    padding: 14px;
+
+    background: rgba(56, 189, 248, 0.08);
+    border-left: 4px solid var(--accent);
+    border-radius: 8px;
+
+    text-align: center;
+    font-size: 15px;
+    color: #e0f2fe;
+}
